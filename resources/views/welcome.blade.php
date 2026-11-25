@@ -13,12 +13,11 @@
         <a href="{{ route('contact') }}">Contact Us</a>
 
         @auth
-            <a href="{{ route('showroom') }}">Showroom</a>
-            <a href="{{ route('dashboard') }}">Dashboard</a>
-        @else
-            <a href="{{ route('login') }}">Login</a>
-            <a href="{{ route('register') }}">Register</a>
-        @endauth
+    <a href="{{ route('showroom') }}">Showroom</a>
+@else
+    <a href="{{ route('login') }}">Login</a>
+    <a href="{{ route('register') }}">Register</a>
+@endauth
     </nav>
 
     <hr>
